@@ -428,62 +428,68 @@ body.index{
 }
 body.saison {
 
-  background-color: #000;
+  background-color:var(--btn-hover);
   font-family: 'Oswald', sans-serif;
 }
-section.saison{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: row;
-      width: 80%;
-      margin: 0 auto;
+.saison_flex{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    justify-content: space-around;
+    margin: auto;
+    height: auto;
+    width: 70%;
     }
     
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
-  .saison_card{
-    position: relative;
-    flex: auto;
+.saison_card{
+    padding: 1rem;
     height: 400px;
-    width: 200px;
+    width: auto;
     margin: 10px 0;
     transition: ease all var(--transition-time);
     perspective: 1200px;
-    &:hover{
-      .cover{
-        transform: rotateX(0deg) rotateY(-180deg);
-        &:before{
-          transform: translateZ(30px);
-        }
-        &:after{
-          background-color: black;
-        }
-        h1{
-          transform: translateZ(100px);
-        }
-        .price{
-          transform: translateZ(60px);
-        }
-        a{
-          transform: translateZ(-60px) rotatey(-180deg);
-        }
-      }
-    }
-    
-    .cover{
-      position: absolute;
-      height: 100%;
-      width: 100%;
+  }
+.saison_card:hover .cover{
+  transform: rotateX(0deg) rotateY(-180deg);}
+.saison_card:hover .cover::before{
+  transform: translateZ(30px);}
+.saison_card:hover .cover::after{
+  background-color: var(--Klaus);}
+.saison_card:hover h1{
+  transform: translateZ(100px);}
+.saison_card:hover .price{
+  transform: translateZ(60px);}
+.saison_card:hover a{
+  transform: translateZ(-60px) rotatey(-180deg);}
+.cover{
+      position: relative;      
+      height: 400px;
+      width: 300px;
       transform-style: preserve-3d;
       transition: ease all var(--transition-time);
       background-size: cover;
-      background-position: center center;
+      background-position: center;
       background-repeat: no-repeat;
-      &:before{
+      color: white;}
+
+.cover.item-a{
+        background-image: url("Ressouces/index-background.png");
+      }
+.cover.item-b{
+        background-image: url('Ressouces/index-background.png');
+      }
+.cover.item-c{
+        background-image: url('Ressouces/index-background.png');
+      }
+   
+.cover:before{
         content: '';
         position: absolute;
         border: 5px solid rgba(255,255,255,.5);
-        box-shadow: 0 0 12px rgba(0,0,0,.3); 
+        box-shadow: 0 0 12px rgba(0,0,0,.3);
         top:20px;
         left:20px;
         right:20px;
@@ -493,7 +499,7 @@ section.saison{
         transform-style: preserve-3d;
         transform: translateZ(0px);
       }
-      &:after{
+.cover:after{
         content: '';
         position: absolute;
         top:0px;
@@ -504,20 +510,12 @@ section.saison{
         transition: ease all 1.3s;
         background: rgba(0,0,0,.4);
       }
-      &.item-a{
-        background-image: url('https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80');
-      }
-      &.item-b{
-        background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80');
-      }
-      &.item-c{
-        background-image: url('https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80');
-      }
-      h1{
+      .cover h1{
         font-weight: 600;
         position: absolute;
-        bottom: 55px;
-        left: 50px;
+        text-align: center;
+        bottom: 30px;
+        left: 75px;
         color: white;
         transform-style: preserve-3d;
         transition: ease all var(--transition-time);
@@ -525,7 +523,7 @@ section.saison{
         font-size: 3em;
         transform: translateZ(0px);
       }
-      .price{
+      .cover .price{
         font-weight: 200;
         position: absolute;
         top: 55px;
@@ -537,8 +535,8 @@ section.saison{
         font-size: 2em;
         transform: translateZ(0px);
       }
-    }
-    .card-back{
+
+.card-back{
       position: absolute;
       height: 100%;
       width: 100%;
@@ -548,8 +546,8 @@ section.saison{
       transform: translateZ(-1px);
       display: flex;
       align-items: center;
-      justify-content: center;
-      a{
+      justify-content: center;}
+.card-back a{
         transform-style: preserve-3d;
         transition: ease transform var(--transition-time), ease-in-out .5s;
         transform: translateZ(-1px) rotatey(-180deg);
@@ -560,11 +558,10 @@ section.saison{
         color: white;
         padding: 14px 32px;
         outline: none;
-        text-decoration: none;
-        &:hover{
+        text-decoration: none;}
+  .card-back a:hover{
           background-color: white;
           color: #0b0f08;
         }
-      }
-    }
-  }
+      
+    
