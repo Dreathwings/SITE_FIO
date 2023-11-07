@@ -1,0 +1,570 @@
+/* ### PAGE INDEX A PARTIR D'ICI*/
+
+@import url(https://db.onlinewebfonts.com/c/f5a20eaf8836a1454138b7c9b8564e7c?family=NATRON-Medium);
+
+body.index{
+    background:url("Ressouces\\index-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "NATRON-Medium";
+    src: url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.eot");
+    src: url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f5a20eaf8836a1454138b7c9b8564e7c.svg#NATRON-Medium")format("svg");
+}
+
+.logo_index{
+    background-repeat: no-repeat;
+    pointer-events: None;
+}
+.logo_img{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    width: 40%;
+    pointer-events: None;
+}
+.Acroche{
+    font-family: "NATRON-Medium";
+    align-self: center;
+    text-align: center;
+    margin-top: 12.5%;
+    color: white;
+    font-size: 1.8rem;
+}
+.BOX{
+    /* Visibility Param*/
+    opacity: 0.0;
+    background:
+    conic-gradient(from -45deg at 50% calc(5*100%/6),#ffffff2c 90deg, #0000002c   0) calc(0*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(5*100%/6),#0000002c 90deg, #ffffff2c 0) calc(0*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(4*100%/6),#ffffff2c 90deg, #0000002c  0) calc(1*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(4*100%/6),#0000002c 90deg, #ffffff2c 0) calc(1*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(3*100%/6),#ffffff2c 90deg, #0000002c  0) calc(2*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(3*100%/6),#0000002c 90deg, #ffffff2c 0) calc(2*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(2*100%/6),#ffffff2c 90deg, #0000002c  0) calc(3*100%/3) var(--_d, 100%),
+    conic-gradient(from -45deg at 50% calc(2*100%/6),#0000002c 90deg, #ffffff2c 0) calc(3*100%/3) var(--_d, 100%);
+  -webkit-background-clip: text, padding-box;
+          background-clip: text, padding-box;
+  background-size: calc(100%/4) 600%;
+  background-repeat: no-repeat;
+  transition: 1s linear;
+  
+}
+.BOX:hover{
+    opacity: 1;
+    --_d: 0%;
+}
+
+#Personnage_BOX{
+    /* Text Param*/
+    font-family: "NATRON-Medium";
+    font-size: 5rem;
+    text-align: center;
+    color:white;
+    /* Position and Size Param*/
+    width: 28.5%;
+    height: 57.5%;
+    position: fixed;
+    top: 9%;
+    right: 2%;
+    /* Border Param*/
+    border-color: black;
+    border-style: dashed;
+    border-width: 0rem;
+
+}
+
+#Saison_BOX{
+    /* Text Param*/
+    font-family: "NATRON-Medium";
+    font-size: 5rem;
+    text-align: center;
+    color:white;
+    /* Position and Size Param*/
+    width: 27.5%;
+    height: 51%;
+    position: fixed;
+    top: 16%;
+    left: 1.5%;
+    /* Border Param*/
+    border-color: black;
+    border-style: dashed;
+    border-width: 0rem;
+
+}
+
+#Contact_BOX{
+    /* Text Param*/
+    font-family: "NATRON-Medium";
+    font-size: 5rem;
+    text-align: center;
+    color:white;
+    /* Position and Size Param*/
+    width: 35%;
+    height: 25%;
+    position: fixed;
+    bottom: 5%;
+    left: 32.5%;
+    /* Border Param*/
+    border-color: black;
+    border-style: dashed;
+    border-width: 0rem;
+
+}
+.credit{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* ### PAGE PERSONNAGE A PARTIR D'ICI*/
+.Logo_nav{
+    left: 5px;
+    top: 10px;
+    height: 10%;
+}
+  
+  nav {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    left: 80%;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+  
+  nav a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #949494;
+    text-decoration: none;
+    font-family: "NATRON-Medium";
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+  }
+  
+  nav a:before,
+  nav a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+  }
+  
+  nav a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  nav a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  nav a:nth-child(1):before {
+    background-color: yellow;
+  }
+  
+  nav a:nth-child(1):after {
+    background-color: red;
+  }
+  
+  nav a:nth-child(2):before {
+    background-color: #00e2ff;
+  }
+  
+  nav a:nth-child(2):after {
+    background-color: #89ff00;
+  }
+  
+  nav a:nth-child(3):before {
+    background-color: purple;
+  }
+  
+  nav a:nth-child(3):after {
+    background-color: palevioletred;
+  }
+  
+  #indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  nav a:hover:before,
+  nav a:hover:after {
+    transform: scale(1);
+  }
+  
+  nav a:nth-child(1):hover ~ #indicator {
+    background: linear-gradient(130deg, yellow, red);
+  }
+  
+  nav a:nth-child(2):hover ~ #indicator {
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+  }
+  
+  nav a:nth-child(3):hover ~ #indicator {
+    left: 70%;
+    background: linear-gradient(130deg, purple, palevioletred);
+  }
+  /*===== GOOGLE FONTS =====*/
+  @import url(https://db.onlinewebfonts.com/c/f5a20eaf8836a1454138b7c9b8564e7c?family=NATRON-Medium);
+  
+  
+  /*===== VARIABLES CSS =====*/
+  :root {
+    --dark-color-lighten: #f2f5ff;
+    --red-card: #a62121;
+    --blue-card: #4bb7e6;
+    --btn: #141414;
+    --btn-hover: #3a3a3a;
+    --text: #fbf7f7;
+    --Allison:#d10a87;
+    --Diego: #c13035;
+    --Klaus:#41b76b;
+    --Luther:#d0ce3b;
+    --Sept:#428e8a;
+    --Vanya:#755f85;
+    --transition-time: 2.3s;
+  }
+  
+  /*===== RESET =====*/
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body.Personnage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--btn);
+    font-family: "NATRON-Medium", sans-serif;
+  }
+  button {
+    font-family: "NATRON-Medium", sans-serif;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    color: var(--text);
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 100%;
+    user-select: none;
+  }
+  
+  /*===== CARD =====*/
+  .container {
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card {
+    position: relative;
+    padding: 1rem;
+    width: 300px;
+    height: 400px;
+    flex: 1 1 30%;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.9rem;
+    border-color: var(--text);
+    background-color: var(--red-card);
+    color: var(--text);
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .Allison {
+      background: var(--Allison);
+  }
+  .Diego {
+      background: var(--Diego);
+  }
+  .Klaus {
+      background: var(--Klaus);
+  }
+  .Luther {
+      background: var(--Luther);
+  }
+  .Sept {
+      background: var(--Sept);
+  }
+  .Vanya {
+      background: var(--Vanya);
+  }
+  
+  .product-image {
+    height: 230px;
+    width: 100%;
+    transform: translate(0, -1rem);
+    transition: transform 500ms ease-in-out;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+  }
+  .product-info {
+    text-align: center;
+  }
+  
+  .card:hover .product-image {
+    transform: translate(-1rem, -7rem);
+  }
+  
+  .product-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .product-info p {
+    font-family: Arial;
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  .buy-btn {
+    background-color: var(--btn);
+    padding: 0.6rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: 300ms ease;
+  }
+  .buy-btn:link{
+      color: white;
+  }
+  .buy-btn:visited {
+      color: white;
+    }
+  .buy-btn:hover {
+    background-color: var(--btn-hover);
+  }
+  .fav {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid#000;
+    display: grid;
+    place-items: center;
+  }
+  
+  .svg {
+    height: 25px;
+    width: 25px;
+    fill: #fff;
+    transition: all 500ms ease;
+  }
+  
+  .fav:hover .svg {
+    fill: #000;
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      height: auto;
+    }
+    .container {
+      padding: 2rem 0;
+      width: 100%;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+/* ### PAGE Saison A PARTIR D'ICI*/
+.Logo_nav{
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  height: 10%;
+}
+body.saison {
+
+  background-color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+section.saison{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+  .saison_card{
+    position: relative;
+    flex: auto;
+    height: 400px;
+    width: 200px;
+    margin: 10px 0;
+    transition: ease all var(--transition-time);
+    perspective: 1200px;
+    &:hover{
+      .cover{
+        transform: rotateX(0deg) rotateY(-180deg);
+        &:before{
+          transform: translateZ(30px);
+        }
+        &:after{
+          background-color: black;
+        }
+        h1{
+          transform: translateZ(100px);
+        }
+        .price{
+          transform: translateZ(60px);
+        }
+        a{
+          transform: translateZ(-60px) rotatey(-180deg);
+        }
+      }
+    }
+    
+    .cover{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform-style: preserve-3d;
+      transition: ease all var(--transition-time);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 5px solid rgba(255,255,255,.5);
+        box-shadow: 0 0 12px rgba(0,0,0,.3); 
+        top:20px;
+        left:20px;
+        right:20px;
+        bottom:20px;
+        z-index: 2;
+        transition: ease all var(--transition-time);
+        transform-style: preserve-3d;
+        transform: translateZ(0px);
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top:0px;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        z-index: 2;
+        transition: ease all 1.3s;
+        background: rgba(0,0,0,.4);
+      }
+      &.item-a{
+        background-image: url('https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80');
+      }
+      &.item-b{
+        background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80');
+      }
+      &.item-c{
+        background-image: url('https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80');
+      }
+      h1{
+        font-weight: 600;
+        position: absolute;
+        bottom: 55px;
+        left: 50px;
+        color: white;
+        transform-style: preserve-3d;
+        transition: ease all var(--transition-time);
+        z-index:3;
+        font-size: 3em;
+        transform: translateZ(0px);
+      }
+      .price{
+        font-weight: 200;
+        position: absolute;
+        top: 55px;
+        right: 50px;
+        color: white;
+        transform-style: preserve-3d;
+        transition: ease all var(--transition-time);
+        z-index:4;
+        font-size: 2em;
+        transform: translateZ(0px);
+      }
+    }
+    .card-back{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #0b0f08;
+      transform-style: preserve-3d;
+      transition: ease all var(--transition-time);
+      transform: translateZ(-1px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        transform-style: preserve-3d;
+        transition: ease transform var(--transition-time), ease-in-out .5s;
+        transform: translateZ(-1px) rotatey(-180deg);
+        background: transparent;
+        border: 1px solid white;
+        font-weight: 200;
+        font-size: 1.3em;
+        color: white;
+        padding: 14px 32px;
+        outline: none;
+        text-decoration: none;
+        &:hover{
+          background-color: white;
+          color: #0b0f08;
+        }
+      }
+    }
+  }
