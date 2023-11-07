@@ -298,13 +298,14 @@ body.index{
   }
   
   /*===== CARD =====*/
-  .container {
+  .container_perso {
+    position: relative;
     height: 80%;
     width: 90%;
     margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    top: 30vh;
   }
   .card {
     position: relative;
@@ -563,5 +564,125 @@ body.saison {
           background-color: white;
           color: #0b0f08;
         }
-      
+    
+
+
+        body.saison_page {
+          background-color: #100e17;
+          font-family: 'Open Sans', sans-serif;
+        }
+        .saison_page_title{
+          color: white;
+          position: fixed;
+          top: 10%;
+          width: 100%;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          font-size: 10rem;
+          font-family: "NATRON-Medium";
+        }
+        .saison_page   .container {
+          position: absolute;
+          height: 300px;
+          width: 85%;
+          top: 40%;
+          left: 5%;
+          display: flex;
+        }
+        
+        .saison_page  .card {
+          display: flex;
+          height: 280px;
+          width: 200px;
+          background-color: #17141d;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+          box-shadow: -1rem 0 3rem #000;
+        /*   margin-left: -50px; */
+          transition: 0.4s ease-out;
+          position: relative;
+          left: 0px;
+        }
+        
+        .saison_page  .card:not(:first-child) {
+            margin-left: -50px;
+        }
+        
+        .saison_page  .card:hover {
+          transform: translateY(-20px);
+          transition: 0.4s ease-out;
+        }
+        
+        .saison_page  .card:hover ~ .card {
+          position: relative;
+          left: 50px;
+          transition: 0.4s ease-out;
+        }
+        
+        .saison_page  .title {
+          color: white;
+          font-weight: 300;
+          position: absolute;
+          left: 20px;
+          top: 15px;
+        }
+        
+        .saison_page  .bar {
+          position: absolute;
+          top: 100px;
+          left: 20px;
+          height: 5px;
+          width: 150px;
+        }
+        
+        .saison_page  .emptybar {
+          background-color: transparent;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .saison_page  .filledbar {
+          position: absolute;
+          top: 0px;
+          z-index: 3;
+          width: 0px;
+          height: 100%;
+          background: rgb(0,154,217);
+          background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+          transition: 0.6s ease-out;
+        }
+        
+        .saison_page  .card:hover .filledbar {
+          width: 150px;
+          transition: 0.4s ease-out;
+        }
+        
+        .saison_page  .circle {
+          visibility: hidden;
+          position: absolute;
+          font-size: 0.75rem;
+          top: 115px;
+          left: 5%;
+        }
+        .saison_page .card:hover .circle {
+          visibility: visible;
+        }
+        .saison_page  .stroke {
+          stroke: white;
+          stroke-dasharray: 360;
+          stroke-dashoffset: 360;
+          transition: 0.6s ease-out;
+        }
+        
+        .saison_page  svg {
+          fill: transparent;
+          stroke-width: 2px;
+        }
+        
+        .saison_page  .card:hover .stroke {
+          stroke-dashoffset: 100;
+          transition: 0.6s ease-out;
+        }
     
